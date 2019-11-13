@@ -1,0 +1,91 @@
+
+@font-face {
+  font-family: 'FontopoNIHONGO';
+  src: font-url('/assets/FontopoNIHONGO.otf') 
+}
+
+
+*{
+  margin:0;
+  padding:0;
+}
+
+.introduction{
+  padding: 20px 0 80px;
+  background-color:#e7e7eb;
+  height:200px;
+
+  &__mail-form{
+
+
+    &__link{
+      padding:3px 5px 5px;
+      border-radius:2px;
+      border:1px solid;
+      color:#333;
+      margin-left:15px;
+      text-decoration:none;
+      font-size:20px;
+    }
+  }
+
+  &__profile{
+    text-align:center;
+
+    &__name{
+      font-size:45px;
+      padding-top:15px;
+      padding-bottom:10px;
+      font-family :'FontopoNIHONGO';
+    }
+  
+    &__biography{
+      font-size:20px;
+      
+    }
+
+  }
+}
+
+.nav{
+  margin-top:20px;
+  background-color:white;
+
+  &__works{
+    display:flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+
+    &__work{
+      width:400px;
+      // height:250px;
+      margin:20px;
+
+      &__name{
+        background-color:#f5f5f5;
+        display:inline-block;
+        padding: 3px 15px 3px 8px;
+      }
+
+      &__image{
+        margin-top:5px;
+      }
+
+      &__description{
+        width:350px;
+        background-color:#f5f5f5;
+        display:inline-block;
+        padding: 3px 15px 3px 8px;
+      }
+
+
+    }
+
+
+  }
+}
+
+.under-space{
+  background:whte;
+  height:100px;
+}
