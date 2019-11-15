@@ -17,7 +17,9 @@
 
 .introduction{
   padding: 20px 0 80px;
-  background-color:#eff7ff;
+  background-image:url(sky2.jpg);
+  background-size:auto;
+  // background-color:#eff7ff;
   height:200px;
 
   &__mail-form{
