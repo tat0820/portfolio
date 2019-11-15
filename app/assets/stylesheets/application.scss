@@ -1,7 +1,12 @@
 
+// @font-face {
+//   font-family: 'FontopoNIHONGO';
+//   src: font-url('/assets/FontopoNIHONGO.otf') 
+// }
+
 @font-face {
-  font-family: 'FontopoNIHONGO';
-  src: font-url('/assets/FontopoNIHONGO.otf') 
+  font-family: 'YOKOHAMA.otf';
+  src: font-url('/assets/YOKOHAMA.otf') 
 }
 
 
@@ -12,7 +17,7 @@
 
 .introduction{
   padding: 20px 0 80px;
-  background-color:#e7e7eb;
+  background-color:#eff7ff;
   height:200px;
 
   &__mail-form{
@@ -23,9 +28,10 @@
       border-radius:2px;
       border:1px solid;
       color:#333;
-      margin-left:15px;
+      margin-left:58px;
       text-decoration:none;
       font-size:20px;
+      font-family :'YOKOHAMA.otf';
     }
   }
 
@@ -34,14 +40,12 @@
 
     &__name{
       font-size:45px;
-      padding-top:15px;
-      padding-bottom:10px;
-      font-family :'FontopoNIHONGO';
+      font-family :'YOKOHAMA.otf';
     }
   
     &__biography{
       font-size:20px;
-      
+      font-family :'YOKOHAMA.otf';
     }
 
   }
@@ -54,12 +58,12 @@
   &__works{
     display:flex;
     flex-wrap: wrap; 
-    justify-content: center; 
+    width:1380px;
+    margin:0 auto;
 
     &__work{
       width:400px;
-      // height:250px;
-      margin:20px;
+      margin:30px;
 
       &__name{
         background-color:#f5f5f5;
@@ -75,7 +79,7 @@
         width:350px;
         background-color:#f5f5f5;
         display:inline-block;
-        padding: 3px 15px 3px 8px;
+        padding: 3px 15px 10px 8px;
       }
 
 
