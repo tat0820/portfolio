@@ -1,14 +1,8 @@
 
-// @font-face {
-//   font-family: 'FontopoNIHONGO';
-//   src: font-url('/assets/FontopoNIHONGO.otf') 
-// }
-
 @font-face {
   font-family: 'YOKOHAMA.otf';
   src: font-url('/assets/YOKOHAMA.otf') 
 }
-
 
 *{
   margin:0;
@@ -17,22 +11,21 @@
 
 .introduction{
   padding: 20px 0 80px;
-  background-image:url(sky2.jpg);
-  background-size:auto;
-  // background-color:#eff7ff;
-  height:200px;
+  background-image:url(footersky.jpg);
+  background-size:cover;
+  filter: brightness(105%);
+  height:250px;
 
   &__mail-form{
 
-
     &__link{
-      padding:3px 5px 5px;
+      padding:5px 8px 7px;
       border-radius:2px;
-      border:1px solid;
+      border:2px solid;
       color:#333;
       margin-left:58px;
       text-decoration:none;
-      font-size:20px;
+      font-size:25px;
       font-family :'YOKOHAMA.otf';
     }
   }
@@ -46,52 +39,110 @@
     }
   
     &__biography{
-      font-size:20px;
+      font-size:30px;
       font-family :'YOKOHAMA.otf';
+      line-height:140%;
     }
 
   }
 }
 
 .nav{
-  margin-top:20px;
-  background-color:white;
+  // background-color:white;
+  background:white;
+  background-size:cover;
 
   &__works{
     display:flex;
     flex-wrap: wrap; 
-    width:1380px;
+    width:1400px;
     margin:0 auto;
+    padding: 25px 0;
 
     &__work{
-      width:400px;
+      // width:400px;
       margin:30px;
 
       &__name{
-        background-color:#f5f5f5;
+        // background-color:#f5f5f5;
+        background-color:#00a1e9;
+        color:white;
+        border-radius:3px;
         display:inline-block;
         padding: 3px 15px 3px 8px;
       }
 
       &__image{
         margin-top:5px;
+        overflow:		hidden;
+        position:		relative;	/* 相対位置指定 */
+        // box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
       }
 
-      &__description{
-        width:350px;
-        background-color:#f5f5f5;
-        display:inline-block;
-        padding: 3px 15px 10px 8px;
-      }
-
+      // &__description{
+      //   width:350px;
+      //   background-color:#f5f5f5;
+      //   display:inline-block;
+      //   padding: 3px 15px 10px 8px;
+      // }
 
     }
-
 
   }
 }
 
-.under-space{
-  background:whte;
-  height:100px;
+.nav__works__work__image .caption {
+	font-size:		130%;
+	text-align: 		center;
+	padding-top:		120px;
+  color:			#fff;
 }
+.nav__works__work__image .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.7);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.nav__works__work__image:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+}
+
+.footer-space{
+  background-image:url(footersky.jpg);
+  background-size:cover;
+  height:120px;
+  filter: brightness(105%);
+}
+
+
+a{
+  text-decoration:none;
+}
+
+// video {
+//   position: fixed;
+//   right: 0;
+//   bottom: 0;
+//   min-width: 100%;
+//   min-height: 100%;
+//   width: auto;
+//   height: auto;
+//   z-index: 1;
+//   }
+
+//   .text {
+//     position: relative; /*必ず必要*/
+//     z-index: 2; /*必ず必要*/
+//     text-align:center;
+//     width:50%;
+//     padding:20px;
+//     margin: 0 auto;
+//     margin-top: 200px;
+//     background-color:#fff;
+//     color: #888;
+//     }

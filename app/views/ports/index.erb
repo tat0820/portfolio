@@ -9,12 +9,13 @@
       鈴木達也
       </div>
       <div class="introduction__profile__biography">
-        経歴・・・通販会社２社にて商品企画、販促を担当<br>
-        言語・・・HTML, CSS, Ruby, JavaScript<br>
-        フレームワーク・・・Ruby on Rails<br>
+        経歴・・通販会社２社にて商品企画、販促を担当<br>
+        言語・・HTML, CSS, Ruby, JavaScript<br>
+        フレームワーク・・Ruby on Rails<br>
       </div>
     </div>
   </div>
+
 </header>
 
 
@@ -26,13 +27,19 @@
       メルカリクローンサイト
       </div>
       <div class="nav__works__work__image">
-      <a href="http://3.115.244.144/"><%= image_tag 'mercari.png' %></a>
-      </div>
-      <div class="nav__works__work__description">
-      ID: mercari_ff   Pass: 0820<br>
-      メルカリを模したwebサイト。<br>
-      本サイト同様にユーザー登録、出品、購入機能<br>
-      等のフリマサイトとして必須の機能を実装。<br>
+      <%= image_tag 'mercari.png' ,size:'630x350' %>
+        <div class="mask">
+          <a href="http://3.115.244.144/"><div class="caption">
+                メルカリを模したwebサイト。<br>
+                本サイト同様にユーザー登録、出品、購入機能<br>
+                等のフリマサイトとして必須の機能を実装。<br>
+                ID: mercari_ff   Pass: 0820
+                <br>
+                <br>
+                <br>
+                <br>
+          </div></a>
+        </div>
       </div>
     </div>
 
@@ -41,12 +48,18 @@
       chat-space
       </div>
       <div class="nav__works__work__image">
-      <a href="https://chatspaceapp.herokuapp.com"><%= image_tag 'chat-space.png' %></a>
-      </div>
-      <div class="nav__works__work__description">
-      ユーザー間でのチャットができるアプリ。<br>
-      インクリメンタルサーチ、非同期通信、<br>
-      自動更新などの機能を実装。<br>
+      <%= image_tag 'chat-space.png',size:'630x350' %>
+        <div class="mask">
+          <a href="https://chatspaceapp.herokuapp.com"><div class="caption">
+                ユーザー間でのチャットができるアプリ。<br>
+                インクリメンタルサーチ、非同期通信、<br>
+                自動更新などの機能を実装。<br>
+                <br>
+                <br>
+                <br>
+                <br>
+          </div></a>
+        </div>
       </div>
     </div>
 
@@ -55,12 +68,18 @@
       coverstock
       </div>
       <div class="nav__works__work__image">
-      <a href="https://coverstock.herokuapp.com/images"><%= image_tag 'coverstock.png' %></a>
-      </div>
-      <div class="nav__works__work__description">
-      お気に入りのCDジャケット投稿サービス。<br>
-      画像をクリックすると動画を再生する。<br>
-      ユーザー登録、投稿機能等を実装<br>
+      <%= image_tag 'coverstock.png',size:'630x350' %>
+        <div class="mask">
+          <a href="https://coverstock.herokuapp.com/images"><div class="caption">
+                お気に入りのCDジャケット投稿サービス。<br>
+                画像をクリックすると動画を再生する。<br>
+                ユーザー登録、投稿機能等を実装<br>
+                <br>
+                <br>
+                <br>
+                <br>
+          </div></a>
+        </div>
       </div>
     </div>
 
@@ -69,12 +88,18 @@
       cheerup
       </div>
       <div class="nav__works__work__image">
-      <a href="https://cheerupup.herokuapp.com/"><%= image_tag 'cheerup.png' %></a>
-      </div>
-      <div class="nav__works__work__description">
-      著名人・キャラクターの名言閲覧アプリbr>
-      初めて作成したアプリで機能は少ないが、<br>
-      jQueryの反映、動画の埋め込み等を行った。<br>
+      <%= image_tag 'cheerup.png',size:'630x350' %>
+        <div class="mask">
+          <a href="https://cheerupup.herokuapp.com/"><div class="caption">
+                著名人・キャラクターの名言閲覧アプリ<br>
+                初めて作成したアプリで機能は少ないが、<br>
+                jQueryの反映、動画の埋め込み等を行った。<br>
+                <br>
+                <br>
+                <br>
+                <br>
+          </div></a>
+        </div>
       </div>
     </div>
 
@@ -82,6 +107,15 @@
 </div>
 
 <footer>
-<div class="under-space">
-</div>
+  <div class="footer-space">
+  
+  
+    <%# <video src="assets/video.mp4" poster="morningsky.jpg" autoplay loop>
+    <div class="text">
+    タイトル<br>
+    テキストが入ります。
+    </div>
+    </video> %>
+
+  </div>
 </footer>
